@@ -1,4 +1,19 @@
-#carousel {
+#down_nav li:hover ul{
+    display: block;
+  }
+  #flip ul{
+    flex-direction: column;
+  }
+  #flip div {
+    line-height: 24px;
+  }
+  #flip ul:first-child{
+    animation: show 5s linear infinite;
+  }
+  #mobileMenu.show {
+    display: block;
+  }
+  #carousel {
     position: relative;
     overflow: hidden;
   }
@@ -62,3 +77,8 @@
         height: auto;
     }
   }
+  @keyframes show{
+    0% {margin-top: 0px;}
+    50% {margin-top: -28px;}
+    100% {margin-top: -56px;}
+}
